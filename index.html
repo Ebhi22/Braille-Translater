@@ -1,0 +1,94 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Braille Converter</h1>
+        <form onsubmit="makePrediction(); return false;">
+             <textarea id="input" placeholder="Enter text" name="input" required></textarea>
+             <button type="submit">Predict</button>
+        </form>
+        <div id="output" name="output"></div>
+
+    </div>
+</body>
+</html> -->
+
+
+<!-- **************************** -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille Language Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Braille Language Converter:</h1>
+    
+    <form method="post">
+        <label for="feature" >Feature:</label>
+        <input type="text" name="feature" id="feature" required>
+        <input type="submit" value="Predict">
+        <!-- <button type="submit">Predict</button> -->
+    </form>
+     
+    <!-- <p id="predictionResult"></p> -->
+    {% if prediction is not none %}
+    <p>Output:{{ prediction }}</p>
+    {% endif %}
+
+    {% if prediction is not none %}
+    <p>Output1:{{ eng }}</p>
+    {% endif %}
+
+    {% if prediction is not none %}
+    <p>Output2:{{ res }}</p>
+    {% endif %}
+
+    <!-- <script>
+        async function makePrediction() {
+    // Get user input from HTML elements
+    let feature = parseFloat(document.getElementById('feature').value);
+    console.log('Input values:', feature);
+
+    // Send input data to Flask server for prediction
+    const response = await fetch('/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `feature=${feature}`,
+    });
+
+    try {
+        // Parse the JSON response
+        const data = await response.json();
+
+        console.log('Server response:', data);
+
+        // Check if the prediction key is present in the response
+        if ('prediction' in data) {
+            // Display the prediction
+            document.getElementById('predictionResult').innerHTML = `Prediction: ${data.prediction}`;
+        } else {
+            console.error('Invalid response from the server:', data);
+        }
+    } catch (error) {
+        console.error('Error parsing JSON response:', error);
+    }
+}
+
+    </script> -->
+</body>
+</html>
