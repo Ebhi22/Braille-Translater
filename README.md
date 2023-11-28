@@ -4,7 +4,7 @@
 Braille is a type of font used by blind people, where characters are represented by patterns of raised dots. The reading is accomplished by feeling the dots with one’s fingertips.
 This is a simple tool for converting plain text of any language to Braille. It provides a web interface where users can input text for transcription. It also has the ability to automatically detect the source language of the text and transcribe it accordingly.
 
-# [Overview](#overview)
+# Overview
 - [Installation](#installation)
 - [Usage](#usage)
 - [Data](#data)
