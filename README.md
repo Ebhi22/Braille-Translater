@@ -18,7 +18,7 @@ This is a simple tool for converting plain text of any language to Braille. It p
 
 1. Read the csv file https://raw.githubusercontent.com/amankharwal/Website-data/master/dataset.csv
 2. Read [README](Backend.md) for backend
-3. Read [README](templates/README.md) for frontend
+3. Read [README](templates/Frontend.md) for frontend
 4. Install language translator using !pip install googletrans
 
 
