@@ -64,7 +64,9 @@ Accuracy of used model is more than 95% .
 
 # Contributing
 
-Sanjeevani Vishnu Bhopre - Documentation and Testing
+This project is contributed by
+
+Sanjeevani Bhopre - Documentation and Testing
 
 Abhishek Kumar - Development and Coding
 
