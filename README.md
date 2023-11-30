@@ -12,7 +12,6 @@ This is a simple tool for converting plain text of any language to Braille. It p
 - [Evaluation](#evaluation)
 - [Results](#results)
 - [Contributing](#contributing)
-- [License](#license)
 
 # Installation
 
